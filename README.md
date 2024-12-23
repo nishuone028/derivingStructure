@@ -1,3 +1,7 @@
+## Chinese ESG Analysis, modifications made to the following citations, thanks
+
+
+
 # Glitter or Gold? Deriving Structured Insights from Sustainability Reports via Large Language Models
 
 by
