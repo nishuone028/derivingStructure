@@ -1,0 +1,38 @@
+{
+    "timestamp":"2024-12-18, 15:39",
+    "script_params":{
+        "test_name":"test01",
+        "document_languages":[
+            "zh"
+        ],
+        "sentence_filtering":{
+            "topk":30,
+            "sim_threshold":0.8
+        },
+        "sentence_minWords":10,
+        "sentences_per_input":1,
+        "select_most_recent_companyDoc":true,
+        "batch_dim":64,
+        "debug":true
+    },
+    "inputs":{
+        "num_docs":10,
+        "companies":"光大银行, 建设银行",
+        "total_sentences":5,
+        "sentence_coverage":0.8
+    },
+    "run_stats":{
+        "computational_time":{
+            "total":"5 minutes and 17 seconds",
+            "sentence_processing":306.373732,
+            "avg_sentence":61.3
+        },
+        "cuda":{
+            "max_memory_allocated":"6.57 GB",
+            "max_memory_reserved":"7.66 GB"
+        }
+    },
+    "model_params":{
+        "zhipuai_api_base":"https:\/\/open.bigmodel.cn\/api\/paas\/v4\/chat\/completions"
+    }
+}

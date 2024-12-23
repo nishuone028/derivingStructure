@@ -1,0 +1,46 @@
+{
+    "timestamp":"2024-12-18, 13:43",
+    "script_params":{
+        "test_name":"test01",
+        "document_languages":[
+            "zh"
+        ],
+        "sentence_filtering":{
+            "topk":30,
+            "sim_threshold":0.75
+        },
+        "sentence_minWords":10,
+        "sentences_per_input":1,
+        "select_most_recent_companyDoc":true,
+        "batch_dim":64,
+        "debug":true
+    },
+    "inputs":{
+        "num_docs":10,
+        "companies":"光大银行, 建设银行",
+        "total_sentences":8,
+        "sentence_coverage":0.375
+    },
+    "run_stats":{
+        "computational_time":{
+            "total":"0 minutes and 33 seconds",
+            "sentence_processing":24.1749318,
+            "avg_sentence":3.0
+        },
+        "cuda":{
+            "max_memory_allocated":"6.57 GB",
+            "max_memory_reserved":"7.66 GB"
+        }
+    },
+    "model_params":{
+        "model_name":"gpt-3.5-turbo",
+        "model":"gpt-3.5-turbo",
+        "stream":false,
+        "n":1,
+        "temperature":0.0,
+        "frequency_penalty":0,
+        "presence_penalty":0,
+        "top_p":1.0,
+        "max_tokens":2000
+    }
+}
